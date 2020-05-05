@@ -1,0 +1,117 @@
+
+.main-navigation {
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    background:rgba(0, 0, 0, 0.5);
+    padding:20px;
+}
+.main-navigation__logo-image{
+    width: 70px;
+    margin-right:20px;
+}
+@media(max-width: 991px){
+    .main-navigation__logo-image{
+        width:40px;
+        margin-right: 10px;
+    }
+}
+.main-navigation__social-icon{
+    width:25px;
+}
+.main-navigation__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1350px;
+    margin:0 auto;
+}
+.main-navigation__logo-link{
+    text-decoration: none;
+    color:white;
+    display: flex;
+    font-size: 35px;
+    align-items: center;
+}
+@media(max-width: 991px){
+    .main-navigation__logo-link{
+        font-size: 26px;
+    }
+}
+.main-navigation__menu{
+    display: flex;
+    list-style: none;
+    padding:0;
+    margin: 0;
+    transition:0.5s;
+    transition-property: opacity;
+
+}
+@media(max-width: 991px){
+    .main-navigation__menu{
+        position: fixed;
+        top:0;
+        right: 0;
+        left:0;
+        bottom: 0;
+        background: black;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        opacity:0;
+        pointer-events: none;
+    }
+}
+@media(max-width: 991px){
+    .main-navigation__menu--open{
+        opacity:1;
+        pointer-events: unset;
+    }
+}
+.main-navigation__menu-item{
+    padding: 5px 0;
+    margin-left: 30px;
+}
+@media(max-width:991px){
+    .main-navigation__menu-item{
+        margin-left: 0;
+    }
+}
+.main-navigation__menu-item:hover{
+     border-bottom: 1px solid white;
+}
+@media(max-width:991px){
+    .main-navigation__menu-item:hover{
+        border-bottom:unset;
+    }
+}
+.main-navigation__link{
+    text-decoration: none;
+    color:white;
+    font-size:15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+@media(max-width:991px){
+    .main-navigation__link{
+        font-size: 25px;
+    }
+}
+.main-navigation__mobile-button{
+    display:none;
+}
+@media(max-width:991px){
+    .main-navigation__mobile-button{
+        display: unset;
+        padding: 0;
+        border: none;
+        background: none;
+    }
+}
+@media(max-width:991px){
+    .main-navigation__mobile-button-image{
+        width:28px;
+        display:block;
+    }
+}
