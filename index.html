@@ -16,6 +16,7 @@
     <link href="/css/aboutus.css" rel="stylesheet">
     <link href="/css/container.css" rel="stylesheet">
     <link href="/css/mainnavigation.css" rel="stylesheet">
+    <link href="/css/bookmark.css" rel="stylesheet">
 
 </head>
 
@@ -35,46 +36,47 @@
                     </a>
                 </li>
                 <li class="main-navigation__menu-item">
-                    <a href="about-us" class="main-navigation__link">
+                    <a href="#about-us" class="main-navigation__link">
                         O nas
                     </a>
                 </li>
                 <li class="main-navigation__menu-item">
-                    <a href="menu" class="main-navigation__link">
+                    <a href="#menu" class="main-navigation__link">
                         Menu
                     </a>
                 </li>
                 <li class="main-navigation__menu-item">
-                    <a href="gallery" class="main-navigation__link">
+                    <a href="#gallery" class="main-navigation__link">
                         Galeria
                     </a>
                 </li>
                 <li class="main-navigation__menu-item">
-                    <a href="contact" class="main-navigation__link">
+                    <a href="#contact" class="main-navigation__link">
                         Kontakt
                     </a>
                 </li>
                 <li class="main-navigation__menu-item">
-                    <a href="map" class="main-navigation__link">
+                    <a href="#map" class="main-navigation__link">
                         Jak dojechać
                     </a>
                 </li>
                 <li class="main-navigation__menu-item">
                     <a href="#" class="main-navigation__link">
-                        <img src="images/icons/social/instagram.svg" alt="Instagram" class="main-navigation__social-icon" >
+                        <img src="images/icons/social/instagram.svg" alt="Instagram"
+                            class="main-navigation__social-icon">
                     </a>
                 </li>
                 <li class="main-navigation__menu-item">
                     <a href="#" class="main-navigation__link">
-                        <img src="images/icons/social/facebook.svg" alt="Facebook" class="main-navigation__social-icon" >
+                        <img src="images/icons/social/facebook.svg" alt="Facebook" class="main-navigation__social-icon">
                     </a>
                 </li>
-                
-                
+
+
             </ul>
             <button class="main-navigation__mobile-button js-main-navigation__mobile-button">
                 <img src="images/icons/navigation.svg" alt="Otwórz/ zamknij nawigację"
-            class="main-navigation__mobile-button-image">
+                    class="main-navigation__mobile-button-image">
             </button>
         </div>
     </nav>
@@ -84,7 +86,7 @@
             Poznaj Nas lepiej!
         </a>
     </section>
-    <div class="container">
+    <div class="container" id="about-us">
         <section class="about-us">
             <div class="about-us__text">
                 <h3 class="about-us__header">
@@ -105,7 +107,22 @@
             <img class="about-us__photo" src="images/about-us.jpg" alt="">
         </section>
     </div>
-
+    <section class=" bookmark bookmark--menu" id="menu">
+        <h2 class="bookmark__header">Menu</h2>
+        <p class="bookmark__description">Spójrz, co dla Ciebie przygotowaliśmy</p>
+    </section>
+    <section class="bookmark bookmark--gallery" id="gallery">
+        <h2 class="bookmark__header">Galeria</h2>
+        <p class="bookmark__description">Tak wyglądają nasze posiłki</p>
+    </section>
+    <section class="bookmark bookmark--contact " id="contact">
+        <h2 class="bookmark__header">Kontakt</h2>
+        <p class="bookmark__description">Porozmawiaj z nami lub zarezerwuj stolik</p>
+    </section>
+    <section class="bookmark bookmark--route" id="map">
+        <h2 class="bookmark__header">Jak dojechać</h2>
+        <p class="bookmark__description">Łatwo nas znajdziesz</p>
+    </section>
 </body>
 
 </html>
