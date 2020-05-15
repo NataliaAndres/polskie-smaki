@@ -18,9 +18,7 @@
         margin-right: 10px;
     }
 }
-.main-navigation__social-icon{
-    width:25px;
-}
+
 .main-navigation__inner{
     display: flex;
     align-items: center;
